@@ -1,0 +1,23 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//n=18 sum of factors except n....is 21  21>18 means abundance else no....abundance=21-18=3.
+import java.util.*;
+class abundancenumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int s=0;
+        for(int i=1;i<n;i++){
+            if(n%i==0){
+                s+=i;
+            }
+        }
+         if(s>n){
+             System.out.println("abundance");
+             System.out.println("abundance:"+(s-n));
+         }
+         else{
+              System.out.println("not abundance");
+         }
+    }
+}
