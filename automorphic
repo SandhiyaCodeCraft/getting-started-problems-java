@@ -1,0 +1,25 @@
+class automorphic {
+    public static void main(String[] args) {
+      int n=77;
+      int s=n*n;
+      int rn;
+      int rs;
+      boolean isauto=true;
+      while(n>0){
+        rn = n%10;
+        rs = s%10;
+        if(rn != rs){
+            isauto=false;
+            break;
+        }
+        n=n/10;
+        s=s/10;
+      }
+      if(isauto){
+          System.out.println("automorphic");
+      }
+      else{
+           System.out.println("not automorphic");
+      }
+  }
+}
