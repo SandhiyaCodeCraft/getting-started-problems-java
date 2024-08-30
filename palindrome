@@ -1,0 +1,19 @@
+class palindrome{
+    public static void main(String[] args) {
+        int n1 =12028;
+        int o = n1;
+        int rem;
+        int rev=0;
+        while(n1>0){
+            rem=n1%10;
+            rev=rev*10+rem;
+            n1=n1/10;
+        }
+        if(o==rev){
+            System.out.println("palindrome");
+        }
+        else{
+             System.out.println(" not palindrome");
+        }
+    }
+}
