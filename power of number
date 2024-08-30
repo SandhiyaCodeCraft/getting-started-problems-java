@@ -1,3 +1,4 @@
+by using math package:
 class power{
     public static void main(String[] args) {
         double base = 1.5;
@@ -8,5 +9,31 @@ class power{
         res2 = Math.pow(base,expo2);
         System.out.println(res1);
         System.out.println(res2);
+    }
+}
+
+class power{
+    public static void main(String[] args) {
+         int base = 5;
+         int expo1 = 5;
+         double res1;
+         res1 = Math.pow(base,expo1);
+         System.out.println(res1);
+        
+    }
+}
+
+
+by using for loop:
+class power{
+    public static void main(String[] args) {
+         int base = 5;
+         int expo1 = 5;
+         double res1=1;
+         while(expo1>0){
+            res1*=base;
+            expo1--;
+         }
+         System.out.println(res1);
     }
 }
