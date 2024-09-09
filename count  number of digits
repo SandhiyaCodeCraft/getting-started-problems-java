@@ -1,0 +1,15 @@
+import java.util.*;
+class countdigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int digit = sc.nextInt();
+        int r;
+        int c=0;
+        while(digit!=0){
+            r = digit%10;
+            c+=1;
+            digit = digit/10;
+        }
+        System.out.println(c);
+    }
+}
